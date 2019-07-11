@@ -29,8 +29,8 @@ public class MovieController {
         return movieService.getMovie(id);
     }
 
-    @PutMapping("/{id}")
-    public Movie updateMovie(Movie movie) {
+    @PutMapping()
+    public Movie updateMovie(@PathVariable Movie movie) {
         return movieService.updateMovie(movie);
     }
 }
